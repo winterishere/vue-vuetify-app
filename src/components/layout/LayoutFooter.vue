@@ -1,9 +1,9 @@
 <template>
   <v-footer
-    color="indigo"
+    color="secondary"
     app
   >
-    <span class="white--text">&copy; 2019</span>
+    <span class="white--text">&copy; 2019 Amazon Web Services</span>
   </v-footer>
 </template>
 
