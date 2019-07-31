@@ -21,7 +21,7 @@
       href="https://github.com/vuetifyjs/vuetify/releases/latest"
       target="_blank"
     >
-      <v-icon>mdi-search</v-icon>
+      <v-icon>mdi-search-web</v-icon>
       <span class="mr-2">Search</span>
     </v-btn>
 
@@ -31,7 +31,7 @@
       href="https://github.com/vuetifyjs/vuetify/releases/latest"
       target="_blank"
     >
-      <v-icon>mdi-location_on</v-icon>
+      <v-icon>mdi-map-outline</v-icon>
       <span class="mr-2">Map</span>
     </v-btn>
 
@@ -40,7 +40,7 @@
       href="https://github.com/vuetifyjs/vuetify/releases/latest"
       target="_blank"
     >
-      <v-icon>mdi-cloud_upload</v-icon>
+      <v-icon>mdi-cloud-upload-outline</v-icon>
       <span class="mr-2">Upload</span>
     </v-btn>
 
