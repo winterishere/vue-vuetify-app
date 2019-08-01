@@ -19,7 +19,7 @@
               dark
               flat
             >
-              <v-toolbar-title>Login</v-toolbar-title>
+              <v-toolbar-title>Sign in</v-toolbar-title>
               <v-spacer></v-spacer>
             </v-toolbar>
             <v-card-text>
@@ -42,7 +42,12 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="primary">Login</v-btn>
+              <v-btn color="primary"><v-icon>mdi-send</v-icon> Submit</v-btn>
+            </v-card-actions>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              Not yet registered?
+              <v-btn text small href="/users/signup" color="primary"><v-icon>mdi-account-plus</v-icon>Sign up</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -53,7 +58,7 @@
 
 <script>
 	export default {
-		name: "Auth",
+		name: "Signin",
 	  props: {
 		  source: String,
 	  }

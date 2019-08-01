@@ -8,20 +8,40 @@
       <v-list dense>
         <v-list-item @click="">
           <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
+            <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
+            <v-list-item-title>HOME</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item @click="">
           <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
+            <v-icon>mdi-shield-account</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
+            <v-list-item-title>Hello, USERNAME</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item @click="">
+          <v-list-item-action>
+            <v-icon>mdi-map-marker</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>MAP</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item @click="">
+          <v-list-item-action>
+            <v-icon>mdi-logout</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Sign out</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
 
