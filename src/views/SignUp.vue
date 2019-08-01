@@ -19,15 +19,24 @@
               dark
               flat
             >
-              <v-toolbar-title>Sign in</v-toolbar-title>
+              <v-toolbar-title>Sign up</v-toolbar-title>
               <v-spacer></v-spacer>
             </v-toolbar>
             <v-card-text>
               <v-form>
                 <v-text-field
-                  label="Login"
-                  name="login"
+                  i="name"
+                  label="Name"
+                  name="name"
                   prepend-icon="mdi-account"
+                  type="text"
+                ></v-text-field>
+
+                <v-text-field
+                  id="email"
+                  label="Email"
+                  name="email"
+                  prepend-icon="mdi-email"
                   type="text"
                 ></v-text-field>
 
@@ -38,6 +47,16 @@
                   prepend-icon="mdi-lock"
                   type="password"
                 ></v-text-field>
+
+                <v-text-field
+                  id="password-confirm"
+                  label="Password Confirm"
+                  name="password-confirm"
+                  prepend-icon="mdi-check-bold"
+                  type="password"
+                ></v-text-field>
+
+
               </v-form>
             </v-card-text>
             <v-card-actions>
@@ -46,8 +65,8 @@
             </v-card-actions>
             <v-card-actions>
               <v-spacer></v-spacer>
-              Not yet registered?
-              <v-btn text small href="/users/signup" color="primary"><v-icon>mdi-account-plus</v-icon>Sign up</v-btn>
+              Have already registered?
+              <v-btn text small href="/users/signin" color="primary"><v-icon>mdi-login</v-icon>Sign in</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -57,12 +76,9 @@
 </template>
 
 <script>
-	export default {
-		name: "Signin",
-	  props: {
-		  source: String,
-	  }
-	}
+    export default {
+        name: "SignUp"
+    }
 </script>
 
 <style scoped>
