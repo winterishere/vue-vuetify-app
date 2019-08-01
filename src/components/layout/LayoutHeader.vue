@@ -1,59 +1,54 @@
 <template>
-  <v-app-bar app >
-    <v-toolbar-title class="headline text-uppercase">
-      <span><v-icon>mdi-wb_sunny</v-icon></span>
-      <span class="font-weight-bold" color="light">CloudAlbum</span>
-    </v-toolbar-title>
-    <v-spacer></v-spacer>
-
-    <v-btn
-      text
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      clipped
     >
-      <v-icon>mdi-face</v-icon>
-      <span class="mr-2">Hello, Mario!</span>
-    </v-btn>
+      <v-list dense>
+        <v-list-item @click="">
+          <v-list-item-action>
+            <v-icon>mdi-view-dashboard</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Dashboard</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="">
+          <v-list-item-action>
+            <v-icon>mdi-settings</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Settings</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
 
-
-    <v-btn
-      text
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
+    <v-app-bar
+      app
+      clipped-left
     >
-      <v-icon>mdi-search-web</v-icon>
-      <span class="mr-2">Search</span>
-    </v-btn>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>CloudAlbum</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+      <v-layout
+        align-center
+        style="max-width: 650px"
+      >
+        <v-text-field
+          :append-icon-cb="() => {}"
+          placeholder="Search..."
+          single-line
+          append-icon="mdi-file-search"
+          color="white"
+          hide-details
+        ></v-text-field>
+      </v-layout>
+
+    </v-app-bar>
 
 
-    <v-btn
-      text
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
-    >
-      <v-icon>mdi-map-outline</v-icon>
-      <span class="mr-2">Map</span>
-    </v-btn>
-
-    <v-btn
-      text
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
-    >
-      <v-icon>mdi-cloud-upload-outline</v-icon>
-      <span class="mr-2">Upload</span>
-    </v-btn>
-
-    <v-btn
-      text
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
-    >
-      <v-icon>mdi-open-in-new</v-icon>
-      <span class="mr-2">Sign out</span>
-    </v-btn>
-
-  </v-app-bar>
 </template>
 
 <script>
