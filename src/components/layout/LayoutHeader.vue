@@ -1,4 +1,5 @@
 <template>
+  <div>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -45,16 +46,17 @@
           hide-details
         ></v-text-field>
       </v-layout>
-
     </v-app-bar>
-
-
+  </div>
 </template>
 
 <script>
-	export default {
-		name: "LayoutHeader"
-	}
+export default {
+  name: "LayoutHeader",
+  data: () => ({
+    drawer: null
+  })
+}
 </script>
 
 <style scoped>
