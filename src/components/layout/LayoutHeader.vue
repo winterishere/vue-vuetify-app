@@ -1,4 +1,5 @@
 <template>
+  <div>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -45,10 +46,8 @@
           hide-details
         ></v-text-field>
       </v-layout>
-
     </v-app-bar>
-
-
+  </div>
 </template>
 
 <script>
