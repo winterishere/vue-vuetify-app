@@ -51,9 +51,12 @@
 </template>
 
 <script>
-	export default {
-		name: "LayoutHeader"
-	}
+export default {
+  name: "LayoutHeader",
+  data: () => ({
+    drawer: null
+  })
+}
 </script>
 
 <style scoped>
